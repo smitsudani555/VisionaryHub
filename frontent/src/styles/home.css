@@ -1,0 +1,93 @@
+/* home.css */
+
+/* Main Home Container */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Container for Welcome Section */
+.home-container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Heading Style */
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+/* Horizontal Box Layout */
+.home-content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+/* Left Box - About Project */
+.home-about-box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-about {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.home-detail1,
+.home-detail2 {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Right Box - Image */
+.home-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Startup Ideas Section */
+.startup-ideas {
+    text-align: center;
+    padding: 20px;
+}
+
+.startup-ideas h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.startup-ideas p {
+    font-size: 1.2rem;
+    color: #555;
+}

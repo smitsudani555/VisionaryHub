@@ -27,7 +27,7 @@ const Header = () => {
           )}
         </>
       ) : (
-        <Link to="/login" className="login-btn">Login</Link>
+        <Link to="/login" className="header-login-btn">Login</Link>
       )}
     </header>
   );

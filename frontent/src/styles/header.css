@@ -12,7 +12,7 @@
     margin: 0;
   }
   
-  .login-btn {
+  .header-login-btn {
     background: #f39c12;
     padding: 10px 15px;
     border-radius: 5px;
@@ -20,7 +20,7 @@
     color: white;
   }
   
-  .login-btn:hover {
+  .header-login-btn:hover {
     background: #e67e22;
   }
   
