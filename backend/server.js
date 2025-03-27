@@ -1,24 +1,19 @@
-require("dotenv").config();
-const express = require("express");
-const connectDB = require("./config/db");
-const authRoutes = require("./routes/authRoutes");
-const cookieParser = require("cookie-parser");
-const cors = require("cors");
+const dotenv = require("dotenv")
+const connectDb = require("./db/index.js")
+const app=require("./app.js")
 
-const app = express();
-const PORT = process.env.PORT || 5000;
+dotenv.config({
+  path: './.env'
+})
 
-// Middleware
-app.use(express.json());
-app.use(cookieParser());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 
-// Connect to MongoDB
-connectDB();
 
-// Routes
-app.use("/api/auth", authRoutes);
-
-app.listen(PORT, () => {
-  console.log(`✅ Server is running on port ${PORT}`);
-});
+connectDB()
+.then(() => {
+  app.listen(process.env.PORT || 8000, () => {
+      console.log(`⚙️ Server is running at port : ${process.env.PORT}`);
+  })
+})
+.catch((err) => {
+  console.log("MONGO db connection failed !!! ", err);
+})
